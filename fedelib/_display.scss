@@ -1,0 +1,8 @@
+@use 'sass:list';
+$display: block, inline, inline-block, flex, inline-flex, grid, inline-grid, flow-root;
+
+@each $v in $display{
+    .d-#{$v}{
+        display: $v;
+    }
+}

@@ -1,0 +1,8 @@
+@use 'sass:list';
+$align: start, end, center, justify;
+
+@each $v in $align{
+    .txt-#{$v}{
+        text-align: $v;
+    }
+}
